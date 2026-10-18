@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist with Supabase</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./btn.css">
+</head>
+<body>
+    <div class="main-container">
+      <form action="" class="form" onsubmit="todoUpdate(event)">
+        <h1>Todo List</h1>
+        <h2>Please enter your tasks bellow:</h2>
+        <label for="todoTask">
+          Enter Task:
+          <input type="text" id="todoTask" />
+        </label>
+        <p id="error"></p>
+        <button class="button">Submit</button>
+      </form>
+      <br />
+      <h2 id="todoListH2">Tasks needs to be completed:</h2>
+      <ul id="todoList"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
